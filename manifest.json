@@ -1,0 +1,10 @@
+{
+  "id": "move-panels",
+  "name": "Move Panels",
+  "version": "0.1.0-alpha",
+  "minAppVersion": "1.4.0",
+  "description": "Move the active note to the pane on the left, right, top, or bottom with commands.",
+  "author": "Sergi Valverde",
+  "isDesktopOnly": false,
+  "authorUrl": "https://github.com/sergivalverde"
+}
