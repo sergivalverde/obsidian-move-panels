@@ -9,7 +9,7 @@ interface TabGroup {
 }
 
 const DIRECTIONS: Direction[] = ["left", "right", "up", "down"];
-// Short prefix in the command name, for fast search in the command palette.
+// Short code at the end of the command name, for fast search in the command palette.
 const PREFIX: Record<Direction, string> = { left: "ml", right: "mr", up: "mu", down: "md" };
 const TOLERANCE = 4; // px, for the gap between neighbor panes
 
@@ -18,7 +18,7 @@ export default class MovePanelsPlugin extends Plugin {
 		for (const dir of DIRECTIONS) {
 			this.addCommand({
 				id: `move-note-${dir}`,
-				name: `${PREFIX[dir]}: Move note to ${dir === "up" ? "top" : dir === "down" ? "bottom" : dir} pane`,
+				name: `Move note to ${dir === "up" ? "top" : dir === "down" ? "bottom" : dir} pane (${PREFIX[dir]})`,
 				checkCallback: (checking) => {
 					const leaf = this.getSourceLeaf();
 					if (!leaf) return false;

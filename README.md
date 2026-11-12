@@ -6,16 +6,16 @@ An Obsidian plugin. It moves the active note to the pane on the left, right, top
 
 ## Commands
 
-- Move Panels: ml: Move note to left pane
-- Move Panels: mr: Move note to right pane
-- Move Panels: mu: Move note to top pane
-- Move Panels: md: Move note to bottom pane
+- Move Panels: Move note to left pane (ml)
+- Move Panels: Move note to right pane (mr)
+- Move Panels: Move note to top pane (mu)
+- Move Panels: Move note to bottom pane (md)
 
 The note goes in as the last tab of the nearest pane in that direction.
 If no pane is in that direction and the current pane has more than one tab, the plugin makes a new split.
 The note keeps its scroll position, its cursor position, and its pinned state.
 
-Each command name starts with a short code (ml, mr, mu, md). Type the code in the command palette to find the command fast.
+Each command name ends with a short code (ml, mr, mu, md). Type the code in the command palette to find the command fast.
 
 To set hotkeys, go to Settings > Hotkeys and search "Move Panels".
 
